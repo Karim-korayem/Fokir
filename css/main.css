@@ -614,3 +614,59 @@ button:hover {
 }
 
 /*end of footer styling */
+
+/* media query start */
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 25px;}
+    
+  .about .contanier .border {
+    float: none;
+    width: 100%;
+  }
+  .about .content {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .about-list ul li:nth-child(2n + 1) {
+    float: none;
+    width: 100%;
+  }
+  .about-list ul li:nth-child(2n) {
+    float: none;
+    width: 100%;
+  }
+  .services {
+    display: inline-block;
+  }
+  .portfolio ul {
+    width: 100%;
+  }
+  .portfolio .port-item {
+    float: none;
+    width: 100%;
+  }
+
+  .counter .number-box {
+    float: none;
+    width: 100%;
+  }
+
+  .client .client-item {
+    width: 100%;
+  }
+  .client .client-item .item-photo {
+    float: none;
+  }
+  .client .client-item .item-content {
+    float: none;
+    width: 100%;
+  }
+  .blog .blog-item {
+    width: 100%;
+    float: none;
+  }
+}
+/* media query end */
