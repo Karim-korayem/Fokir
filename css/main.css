@@ -659,11 +659,6 @@ button:hover {
     visibility: visible;
     opacity: 1;
   }
-  .navbar .contanier .links ul:focus {
-    visibility: visible;
-    opacity: 1;
-  }
-
   .section-title {
     font-size: 25px;
   }
