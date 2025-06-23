@@ -103,11 +103,10 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   padding: 12px 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 .navbar .contanier .logo {
   float: left;
 }
@@ -123,6 +122,12 @@ html {
 .navbar .contanier .links ul li {
   float: left;
   padding: 10px;
+}
+.navbar .contanier .links .bars {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 .navbar .contanier .links ul li a {
   color: rgb(255, 255, 255);
@@ -617,9 +622,51 @@ button:hover {
 
 /* media query start */
 @media (max-width: 767.98px) {
+  .navbar .contanier .links {
+    position: relative;
+    float: none;
+    text-align: center;
+  }
+  .navbar .contanier .links ul {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease all;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .navbar .contanier .links ul li {
+    float: none;
+    padding: 15px;
+  }
+  .navbar .contanier .links .bars {
+    color: #ff305b;
+    position: absolute;
+    right: 20px;
+    top: 15%;
+    transform: translateY(15%);
+    width: auto;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar .contanier .links .bars:hover + ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar .contanier .links ul:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar .contanier .links ul:focus {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .section-title {
-    font-size: 25px;}
-    
+    font-size: 25px;
+  }
   .about .contanier .border {
     float: none;
     width: 100%;
@@ -638,6 +685,9 @@ button:hover {
     float: none;
     width: 100%;
   }
+  .about .contanier .content .download-cv-btn a {
+    margin-bottom: 15px;
+  }
   .services {
     display: inline-block;
   }
@@ -648,12 +698,10 @@ button:hover {
     float: none;
     width: 100%;
   }
-
   .counter .number-box {
     float: none;
     width: 100%;
   }
-
   .client .client-item {
     width: 100%;
   }
